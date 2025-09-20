@@ -4,53 +4,56 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class QLCB {
-	private ArrayList<CanBo> dscb;
-	public QLCB() {
-		dscb = new ArrayList<CanBo>(10);
-	}
-	public void themCanBo(CanBo cb) {
-		dscb.add(cb);
-	}
-	public void nhapDanhSach(Scanner sc) {
-		CanBo cb;
-		System.out.print("Nhap vao so luong can bo: ");
-		int n = sc.nextInt();
-		sc.nextLine();
+    private ArrayList<CanBo> dscb123;   
 
-		System.out.println("Nhap thong tin chi tiet:");
-		for (int i = 0; i < n; i++) {
-			System.out.println("Lan nhap thu " + (i + 1) + ":");
-			System.out.print("Chon can bo (1-KySu; 2-NhanVien;3-CongNhan): ");
-			int chon = sc.nextInt();
-			sc.nextLine();
+    public QLCB() {
+        dscb123 = new ArrayList<CanBo>(10);
+    }
 
-			cb = new CanBo();
+    public void themCanBo(CanBo cb123) {
+        dscb123.add(cb123);
+    }
 
-			switch (chon) {
-			case 1:
-				cb = new KySu();
-				break;
-			case 2:
-				cb = new NhanVien();
-				break;
-			case 3:
-				cb = new CongNhan();
-				break;
+    public void nhapDanhSach(Scanner sc) {
+        CanBo cb123;
+        System.out.print("Nhap vao so luong can bo: ");
+        int n123 = sc.nextInt();   
+        sc.nextLine();
 
-			default:
-				cb = new KySu();
-				break;
-			}
+        System.out.println("Nhap thong tin chi tiet:");
+        for (int i123 = 0; i123 < n123; i123++) {
+            System.out.println("Lan nhap thu " + (i123 + 1) + ":");
+            System.out.print("Chon can bo (1-KySu; 2-NhanVien;3-CongNhan): ");
+            int chon123 = sc.nextInt();
+            sc.nextLine();
 
-			cb.nhapThongTin(sc);
-			themCanBo(cb);
-		}
-	}
-	public void timKiemCanBo(String hoTen) {
-		for (CanBo cb : dscb) {
-			if (hoTen.equals(cb.getHoTen())) {
-				cb.hienThiThongTin();
-			}
-		}
-	}
+            cb123 = new CanBo();
+
+            switch (chon123) {
+                case 1:
+                    cb123 = new KySu();
+                    break;
+                case 2:
+                    cb123 = new NhanVien();
+                    break;
+                case 3:
+                    cb123 = new CongNhan();
+                    break;
+                default:
+                    cb123 = new KySu();
+                    break;
+            }
+
+            cb123.nhapThongTin(sc);
+            themCanBo(cb123);
+        }
+    }
+
+    public void timKiemCanBo(String hoTen123) {
+        for (CanBo cb123 : dscb123) {
+            if (hoTen123.equals(cb123.getHoTen123())) {
+                cb123.hienThiThongTin();
+            }
+        }
+    }
 }

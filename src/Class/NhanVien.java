@@ -3,25 +3,25 @@ package Class;
 import java.util.Scanner;
 
 public class NhanVien extends CanBo {
-	private String congViec;
+    private String congViec123;  
 
-	public NhanVien() {
+    public NhanVien() {
 
-	}
+    }
 
-	public NhanVien(String hoten, String ngaySinh, String gioiTinh, String diaChi, String congViec) {
-		super(hoten, ngaySinh, gioiTinh, diaChi);
-		this.congViec = congViec;
-	}
+    public NhanVien(String hoTen123, String ngaySinh123, String gioiTinh123, String diaChi123, String congViec123) {
+        super(hoTen123, ngaySinh123, gioiTinh123, diaChi123);
+        this.congViec123 = congViec123;
+    }
 
-	public void nhapThongTin(Scanner sc) {
-		super.nhapThongTin(sc);
-		System.out.print("\tNhap cong viec: ");
-		congViec = sc.nextLine();
-	}
+    public void nhapThongTin(Scanner sc) {
+        super.nhapThongTin(sc);
+        System.out.print("\tNhap cong viec: ");
+        congViec123 = sc.nextLine();
+    }
 
-	public void hienThiThongTin() {
-		super.hienThiThongTin();
-		System.out.println("\tCong viec: " + congViec);
-	}
+    public void hienThiThongTin() {
+        super.hienThiThongTin();
+        System.out.println("\tCong viec: " + congViec123);
+    }
 }

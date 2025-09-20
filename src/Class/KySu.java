@@ -3,24 +3,25 @@ package Class;
 import java.util.Scanner;
 
 public class KySu extends CanBo {
-	private String nganhDaoTao;
-	public KySu() {
+    private String nganhDaoTao123;  
 
-	}
+    public KySu() {
 
-	public KySu(String hoten, String ngaySinh, String gioiTinh, String diaChi, String nganhDaoTao) {
-		super(hoten, ngaySinh, gioiTinh, diaChi);
-		this.nganhDaoTao = nganhDaoTao;
-	}
+    }
 
-	public void nhapThongTin(Scanner sc) {
-		super.nhapThongTin(sc);
-		System.out.print("\tNhap nganh dao tao: ");
-		nganhDaoTao = sc.nextLine();
-	}
+    public KySu(String hoTen123, String ngaySinh123, String gioiTinh123, String diaChi123, String nganhDaoTao123) {
+        super(hoTen123, ngaySinh123, gioiTinh123, diaChi123);
+        this.nganhDaoTao123 = nganhDaoTao123;
+    }
 
-	public void hienThiThongTin() {
-		super.hienThiThongTin();
-		System.out.println("\tNganh dao tao: " + nganhDaoTao);
-	}
+    public void nhapThongTin(Scanner sc) {
+        super.nhapThongTin(sc);
+        System.out.print("\tNhap nganh dao tao: ");
+        nganhDaoTao123 = sc.nextLine();
+    }
+
+    public void hienThiThongTin() {
+        super.hienThiThongTin();
+        System.out.println("\tNganh dao tao: " + nganhDaoTao123);
+    }
 }
